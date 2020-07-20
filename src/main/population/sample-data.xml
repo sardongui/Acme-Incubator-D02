@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+- sample-data.xml
+-
+- Copyright (c) 2019 Rafael Corchuelo.
+-
+- In keeping with the traditional purpose of furthering education and research, it is
+- the policy of the copyright owner to permit non-commercial use and redistribution of
+- this software. It has been tested carefully, but it is not guaranteed for any particular
+- purposes.  The copyright owner does not offer any warranties or representations, nor do
+- they accept any liabilities with respect to them.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="conversion-service.xml" />
+	
+	<!-- JimenezBulletin -->
+	<bean id="JimenezBulletin01" class="acme.entities.bulletins.JimenezBulletin">
+		<property name="web" value="http://youtube.com"/>
+		<property name="description" value="Página para ver vídeos"></property>
+		<property name="moment" value="2020/01/20 10:00"/>
+	</bean>
+	<!-- DonaireBulletin -->
+	<bean id="DonaireBulletin01" class="acme.entities.bulletins.DonaireBulletin">
+		<property name="web" value="https://www.idealista.com/"/>
+		<property name="description" value="Página para alquilar o comprar pisos o casas"></property>
+		<property name="moment" value="2020/05/01 21:00"/>
+	</bean>
+	<!-- FernandezBulletin -->
+	<bean id="FernandezBulletin01" class="acme.entities.bulletins.FernandezBulletin">
+		<property name="web" value="http://weplan.appspot.com/"/>
+		<property name="description" value="Página para buscar eventos."></property>
+		<property name="moment" value="2020/03/01 21:00"/>
+	</bean>
+	<!-- MarinBulletin -->
+	<bean id="MarinBulletin01" class="acme.entities.bulletins.MarinBulletin">
+		<property name="web" value="https://www.game.es/"/>
+		<property name="description" value="Página de una tienda de videojuegos."></property>
+		<property name="moment" value="2020/02/01 21:00"/>
+	</bean>
+	<!-- GonzalezBulletin -->
+	<bean id="GonzalezBulletin01" class="acme.entities.bulletins.GonzalezBulletin">
+		<property name="web" value="https://www.spotify.com/"/>
+		<property name="description" value="Página para escuchar música."></property>
+		<property name="moment" value="2020/07/10 17:00"/>
+	</bean>
+</beans>
