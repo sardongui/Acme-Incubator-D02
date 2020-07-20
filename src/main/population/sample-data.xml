@@ -47,4 +47,11 @@
 		<property name="description" value="Página para escuchar música."></property>
 		<property name="moment" value="2020/07/10 17:00"/>
 	</bean>
+	<!-- Customisation -->
+	<bean id="Customisation" class="acme.entities.customisations.Customisation">
+		<property name="spamwords" value="sex,hard core,viagra,cialis,nigeria,you've won, million dollar,sexo,duro,has ganado,millon de dolares"/>
+		<property name="threshold" value="2.50"/>
+		<property name="activitySectors" value="Technology,Science,Arts,Business,Health"/>
+	</bean>
+	
 </beans>
