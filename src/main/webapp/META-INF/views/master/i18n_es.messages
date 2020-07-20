@@ -47,6 +47,11 @@ master.menu.anonymous.create-fernandez-bulletin = Publicar en boletín de Ferná
 master.menu.anonymous.list-gonzalez-bulletin = Boletín de González
 master.menu.anonymous.create-gonzalez-bulletin = Publicar en boletín de González
 
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated = Authenticado
+master.menu.authenticated.list-challenge = Lista de desafios
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
