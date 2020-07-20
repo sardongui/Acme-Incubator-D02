@@ -47,4 +47,25 @@
 		<property name="description" value="Página para escuchar música."></property>
 		<property name="moment" value="2020/07/10 17:00"/>
 	</bean>
+	
+	<!-- Inquires -->
+	<bean id="Inquire01" class="acme.entities.inquires.Inquire">
+		<property name="title" value="my first inquire"/>
+		<property name="creationDate" value="2020/07/20 17:00"></property>
+		<property name="endDate" value="2020/12/10 17:00"/>
+		<property name="description" value="this is the first inquire."></property>
+		<property name="minMoney" value="20.23€"></property>
+		<property name="maxMoney" value="100.23€"></property>
+		<property name="email" value="inquire@gmail.com"></property>
+	</bean>
+	
+	<bean id="Inquire02" class="acme.entities.inquires.Inquire">
+		<property name="title" value="my second inquire"/>
+		<property name="creationDate" value="2020/06/20 17:00"></property>
+		<property name="endDate" value="2020/12/11 17:00"/>
+		<property name="description" value="this is the second inquire."></property>
+		<property name="minMoney" value="20.24€"></property>
+		<property name="maxMoney" value="400.23€"></property>
+		<property name="email" value="inquire2@gmail.com"></property>
+	</bean>
 </beans>
