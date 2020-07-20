@@ -25,12 +25,12 @@ public class AuthenticatedOvertureListService implements AbstractListService<Aut
 	@Override
 	public boolean authorise(final Request<Overture> request) {
 		assert request != null;
-		Boolean result = false;
+		Boolean res = false;
 		Principal principal = request.getPrincipal();
 		if (principal.isAuthenticated()) {
-			result = true;
+			res = true;
 		}
-		return result;
+		return res;
 	}
 
 	@Override
@@ -44,8 +44,8 @@ public class AuthenticatedOvertureListService implements AbstractListService<Aut
 	@Override
 	public Collection<Overture> findMany(final Request<Overture> request) {
 		assert request != null;
-		Collection<Overture> result = this.repository.findMany();
-		return result;
+		Collection<Overture> res = this.repository.findMany();
+		return res;
 	}
 
 }

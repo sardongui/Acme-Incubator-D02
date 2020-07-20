@@ -1,8 +1,11 @@
-anonymous.jimenez-bulletin.form.label.web = Web:
-anonymous.jimenez-bulletin.form.label.description = Descripción:
-anonymous.jimenez-bulletin.form.button.create = Publicar
-anonymous.jimenez-bulletin.form.button.return = Volver
+authenticated.overture.list.label.moment = Momento
+authenticated.overture.list.label.title = Título
 
-anonymous.jimenez-bulletin.list.label.moment = Momento
-anonymous.jimenez-bulletin.list.label.web = Web:
-anonymous.jimenez-bulletin.list.label.description = Descripción:
+authenticated.overture.form.label.title = Título
+authenticated.overture.form.label.moment = Momento
+authenticated.overture.form.label.deadline = Fecha límite
+authenticated.overture.form.label.description = Descripción
+authenticated.overture.form.label.email = Correo electrónico
+authenticated.overture.form.label.minMoney = Mínimo de dinero
+authenticated.overture.form.label.maxMoney = Máximo de dinero
+authenticated.overture.form.button.return = Volver

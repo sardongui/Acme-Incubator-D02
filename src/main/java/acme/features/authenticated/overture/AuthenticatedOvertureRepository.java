@@ -16,6 +16,5 @@ public interface AuthenticatedOvertureRepository extends AbstractRepository {
 	Collection<Overture> findMany();
 
 	@Query("Select o from Overture o where o.id = ?1")
-	Overture findOneById(int id);
-
+	Overture findOne(int id);
 }

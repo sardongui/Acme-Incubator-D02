@@ -16,8 +16,6 @@ import acme.framework.entities.Authenticated;
 @RequestMapping("/authenticated/overture/")
 public class AuthenticatedOvertureController extends AbstractController<Authenticated, Overture> {
 
-	// Internal state ---------------------------------------------------------
-
 	@Autowired
 	private AuthenticatedOvertureListService	listService;
 	@Autowired
@@ -31,5 +29,4 @@ public class AuthenticatedOvertureController extends AbstractController<Authenti
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 	}
-
 }

@@ -47,6 +47,11 @@ master.menu.anonymous.create-fernandez-bulletin = Publish in Fernandez's bulleti
 master.menu.anonymous.list-gonzalez-bulletin = Gonzalez's bulletin
 master.menu.anonymous.create-gonzalez-bulletin = Publish in Gonzalez's bulletin
 
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated = Authenticated
+master.menu.authenticated.list-overture = List of overtures
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
