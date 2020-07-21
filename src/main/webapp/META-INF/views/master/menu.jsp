@@ -38,6 +38,10 @@
 			<acme:menu-suboption code="master.menu.anonymous.list-gonzalez-bulletin" action="/anonymous/gonzalez-bulletin/list" />
 			<acme:menu-suboption code="master.menu.anonymous.create-gonzalez-bulletin" action="/anonymous/gonzalez-bulletin/create" />
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.list-inquire" action="/authenticated/inquire/list"/>
+		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
 

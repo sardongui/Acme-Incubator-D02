@@ -51,6 +51,8 @@ master.menu.anonymous.create-gonzalez-bulletin = Publicar en boletín de Gonzál
 
 
 
+master.menu.authenticated.list-inquire = List de consultas
+
 master.menu.authenticated.list-challenge = Lista de desafios
 
 master.menu.authenticated = Autenticado
