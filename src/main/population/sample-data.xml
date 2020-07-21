@@ -47,4 +47,36 @@
 		<property name="description" value="Página para escuchar música."></property>
 		<property name="moment" value="2020/07/10 17:00"/>
 	</bean>
+	
+	<!-- TechnologyRecords -->
+	<bean id="Technology01" class="acme.entities.technologies.Technology">
+		<property name="title" value="Title 1"/>
+		<property name="activitySector" value="Sector 1"/>
+		<property name="inventorName" value="Name 1"/>
+		<property name="description" value="Description 1"/>
+		<property name="webSite" value="https://www.website1.com/"/>
+		<property name="email" value="email1@gmail.com"/>
+		<property name="indication" value="closed-source"/>
+		<property name="stars" value="3"/>
+	</bean>
+	<bean id="Technology02" class="acme.entities.technologies.Technology">
+		<property name="title" value="Title 2"/>
+		<property name="activitySector" value="Sector 2"/>
+		<property name="inventorName" value="Name 2"/>
+		<property name="description" value="Description 2"/>
+		<property name="webSite" value="https://www.website2.com/"/>
+		<property name="email" value="email2@gmail.com"/>
+		<property name="indication" value="open-source"/>
+		<property name="stars" value="-5"/>
+	</bean>
+	<bean id="Technology03" class="acme.entities.technologies.Technology">
+		<property name="title" value="Title 3"/>
+		<property name="activitySector" value="Sector 3"/>
+		<property name="inventorName" value="Name 3"/>
+		<property name="description" value="Description 3"/>
+		<property name="webSite" value="https://www.website3.com/"/>
+		<property name="email" value="email3@gmail.com"/>
+		<property name="indication" value="open-source"/>
+		<property name="stars"><null/></property>
+	</bean>
 </beans>
