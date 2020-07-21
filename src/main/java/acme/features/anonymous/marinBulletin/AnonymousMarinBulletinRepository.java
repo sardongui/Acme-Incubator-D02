@@ -11,6 +11,6 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AnonymousMarinBulletinRepository extends AbstractRepository {
 
-	@Query("select s from MarinBulletin s")
+	@Query("select m from MarinBulletin m")
 	Collection<MarinBulletin> findMany();
 }
