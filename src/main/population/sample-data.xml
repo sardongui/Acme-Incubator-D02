@@ -47,6 +47,7 @@
 		<property name="description" value="Página para escuchar música."/>
 		<property name="moment" value="2020/07/10 17:00"/>
 	</bean>
+
 	<!-- Challenge -->
 	<bean id="Challenge01" class="acme.entities.challenges.Challenge">
 		<property value="Title Challenge 01" name="title"/>
@@ -81,4 +82,32 @@
 		<property value="Challenge expert goal 03" name="expertGoal"/>	
 		<property value="400€" name="expertReward"/>
 	</bean>
+
+	<!-- Customisation -->
+	<bean id="Customisation" class="acme.entities.customisations.Customisation">
+		<property name="spamwords" value="sex,hard core,viagra,cialis,nigeria,you've won, million dollar,sexo,duro,has ganado,millon de dolares"/>
+		<property name="threshold" value="2.50"/>
+		<property name="activitySectors" value="Technology,Science,Arts,Business,Health"/>
+	</bean>
+	<!-- Overture -->
+	<bean id="Overture01" class="acme.entities.overtures.Overture">
+		<property name="title" value="Title 1" />
+		<property name="moment" value="2020/03/10 11:00" />
+		<property name="deadline" value="2020/11/20 10:00" />
+		<property name="description" value="This is a description 1" />
+		<property name="email" value="overture01@gmail.com" />
+		<property name="minMoney" value="300.0€" />
+		<property name="maxMoney" value="700.0€" />
+	</bean>
+	<bean id="Overture02" class="acme.entities.overtures.Overture">
+		<property name="title" value="Title 2" />
+		<property name="moment" value="2020/01/01 15:00" />
+		<property name="deadline" value="2020/04/10 10:00" />
+		<property name="description" value="This is a description 2" />
+		<property name="email" value="overture2@gmail.com" />
+		<property name="minMoney" value="200.0€" />
+		<property name="maxMoney" value="800.0€" />
+	</bean>
+
+
 </beans>
