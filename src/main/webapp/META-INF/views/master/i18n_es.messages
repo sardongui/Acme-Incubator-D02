@@ -49,8 +49,13 @@ master.menu.anonymous.create-gonzalez-bulletin = Publicar en boletín de Gonzál
 
 # master.menu.authenticated ###################################################
 
+
+
+master.menu.authenticated.list-challenge = Lista de desafios
+
 master.menu.authenticated = Autenticado
 master.menu.authenticated.list-overture = List de oberturas
+
 
 # master.menu.administrator ###################################################
 

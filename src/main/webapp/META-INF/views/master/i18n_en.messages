@@ -50,7 +50,11 @@ master.menu.anonymous.create-gonzalez-bulletin = Publish in Gonzalez's bulletin
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Authenticated
+
+master.menu.authenticated.list-challenge = List of challenges
+
 master.menu.authenticated.list-overture = List of overtures
+
 
 # master.menu.administrator ###################################################
 
