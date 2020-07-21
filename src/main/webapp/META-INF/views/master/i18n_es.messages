@@ -46,6 +46,7 @@ master.menu.anonymous.list-fernandez-bulletin = Boletín de Fernández
 master.menu.anonymous.create-fernandez-bulletin = Publicar en boletín de Fernández
 master.menu.anonymous.list-gonzalez-bulletin = Boletín de González
 master.menu.anonymous.create-gonzalez-bulletin = Publicar en boletín de González
+master.menu.anonymous.list-notice = Lista de Anuncios
 
 # master.menu.administrator ###################################################
 

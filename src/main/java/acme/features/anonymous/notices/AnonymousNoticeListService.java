@@ -34,13 +34,9 @@ public class AnonymousNoticeListService implements AbstractListService<Anonymous
 	public Collection<Notice> findMany(final Request<Notice> request) {
 		assert request != null;
 
-		Calendar c;
-		c = new GregorianCalendar();
-		c.add(Calendar.MONTH, -1);
-		Date d = c.getTime();
 
 		Collection<Notice> result;
-		result = this.repository.findMany(d);
+		result = this.repository.findMany();
 
 		return result;
 	}

@@ -2,6 +2,8 @@
 package acme.features.anonymous.notices;
 
 
+import java.util.Collection;
+
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
@@ -14,6 +16,7 @@ public interface AnonymousNoticeRepository extends AbstractRepository {
 	@Query("select n from Notice n where n.id = ?1")
 	Notice findOneById(int id);
 	
-	@Query("select n from Notice n where n.creationDate = ?1")
-	Notice findMany(int id);
+	@Query("select n from Notice n where n.creationDate > CURRENT_TIMESTAMP")
+	Collection<Notice> findMany();
+	
 }
