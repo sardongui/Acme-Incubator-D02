@@ -7,5 +7,6 @@ anonymous.notice.form.label.links = Links
 anonymous.notice.form.button.return = Return
 
 anonymous.notice.list.label.creationMoment = Creation moment
-anonymous.notice.list.label.title = Title:
+anonymous.notice.list.label.title = Title
+anonymous.notice.list.label.body = Body
 anonymous.notice.list.label.headerPicture = Header Picture
