@@ -7,7 +7,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import acme.entities.bulletins.DonaireBulletin;
-import acme.entities.bulletins.JimenezBulletin;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
