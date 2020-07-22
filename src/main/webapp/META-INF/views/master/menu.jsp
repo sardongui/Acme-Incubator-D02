@@ -39,8 +39,27 @@
 			<acme:menu-suboption code="master.menu.anonymous.create-gonzalez-bulletin" action="/anonymous/gonzalez-bulletin/create" />
 		</acme:menu-option>
 
+		<acme:menu-option code="master.menu.anonymous.notice" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.anonymous.list-notice" action="/anonymous/notice/list"/>
+		</acme:menu-option>
+
+		
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.list-inquire" action="/authenticated/inquire/list"/>
+		</acme:menu-option>
+
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+
+			<acme:menu-suboption code="master.menu.authenticated.list-challenge" action="/authenticated/challenge/list"/>
+
+			<acme:menu-suboption code="master.menu.authenticated.list-overture" action="/authenticated/overture/list"/>
+
+		</acme:menu-option>
+
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
+			<acme:menu-suboption code="master.menu.administrator.customisation" action="/administrator/customisation/show"/>
+			<acme:menu-suboption code="master.menu.administrator.list-notice" action="/administrator/notice/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>

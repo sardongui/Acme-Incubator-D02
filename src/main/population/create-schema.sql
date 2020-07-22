@@ -20,12 +20,39 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `challenge` (
+       `id` integer not null,
+        `version` integer not null,
+        `average_goal` varchar(255),
+        `average_reward_amount` double precision,
+        `average_reward_currency` varchar(255),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `expert_goal` varchar(255),
+        `expert_reward_amount` double precision,
+        `expert_reward_currency` varchar(255),
+        `rookie_goal` varchar(255),
+        `rookie_reward_amount` double precision,
+        `rookie_reward_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
         `company` varchar(255),
         `sector` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `customisation` (
+       `id` integer not null,
+        `version` integer not null,
+        `activity_sectors` varchar(255),
+        `spamwords` varchar(255),
+        `threshold` double precision,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -47,6 +74,30 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `gonzalez_bulletin` (
+       `id` integer not null,
+        `version` integer not null,
+        `description` varchar(255),
+        `moment` datetime(6),
+        `web` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `inquire` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation_date` datetime(6),
+        `description` varchar(255),
+        `email` varchar(255),
+        `end_date` datetime(6),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `jimenez_bulletin` (
        `id` integer not null,
         `version` integer not null,
@@ -62,6 +113,33 @@
         `description` varchar(255),
         `moment` datetime(6),
         `web` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `notice` (
+       `id` integer not null,
+        `version` integer not null,
+        `body` varchar(255),
+        `creation_moment` datetime(6),
+        `deadline` datetime(6),
+        `header_picture` varchar(255),
+        `links` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `overture` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `email` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `moment` datetime(6),
+        `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
