@@ -4,8 +4,8 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-url code="anonymous.donaire-bulletin.form.label.web" path="web"/>
-	<acme:form-textarea code="anonymous.donaire-bulletin.form.label.description" path="description"/>
+	<acme:form-textbox code="anonymous.donaire-bulletin.form.label.author" path="author"/>
+	<acme:form-textarea code="anonymous.donaire-bulletin.form.label.text" path="text"/>
 	
 	<acme:form-submit code="anonymous.donaire-bulletin.form.button.create" action="/anonymous/donaire-bulletin/create"/>
 	<acme:form-return code="anonymous.donaire-bulletin.form.button.return"/>
