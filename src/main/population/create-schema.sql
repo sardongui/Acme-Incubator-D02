@@ -47,6 +47,15 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `gonzalez_bulletin` (
+       `id` integer not null,
+        `version` integer not null,
+        `description` varchar(255),
+        `moment` datetime(6),
+        `web` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `jimenez_bulletin` (
        `id` integer not null,
         `version` integer not null,
@@ -62,6 +71,18 @@
         `description` varchar(255),
         `moment` datetime(6),
         `web` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `notice` (
+       `id` integer not null,
+        `version` integer not null,
+        `body` varchar(255),
+        `creation_moment` datetime(6),
+        `deadline` datetime(6),
+        `header_picture` varchar(255),
+        `links` varchar(255),
+        `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 

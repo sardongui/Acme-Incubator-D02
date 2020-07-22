@@ -48,6 +48,17 @@
 		<property name="moment" value="2020/07/10 17:00"/>
 	</bean>
 
+	<!-- Notice1 -->
+	<bean id="Notice01" class="acme.entities.notices.Notice">
+		<property name="headerPicture" value="https://ar.pinterest.com/pin/833940055989345675/"/>
+		<property name="title" value="Notice 1"/>
+		<property name="creationMoment" value="2020/07/21 18:00"/>
+		<property name="deadline" value="2020/12/20 17:00"/>
+		<property name="body" value="Body Notice01"/>
+		<property name="links" value=""/>
+	</bean>
+
+
 	
 	<!-- Inquires -->
 	<bean id="Inquire01" class="acme.entities.inquires.Inquire">
