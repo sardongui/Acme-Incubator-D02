@@ -32,7 +32,6 @@ public class AnonymousNoticeListService implements AbstractListService<Anonymous
 	public Collection<Notice> findMany(final Request<Notice> request) {
 		assert request != null;
 
-
 		Collection<Notice> result = this.repository.findMany();
 
 		return result;
