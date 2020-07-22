@@ -25,7 +25,11 @@
 
     drop table if exists `authenticated`;
 
+    drop table if exists `challenge`;
+
     drop table if exists `consumer`;
+
+    drop table if exists `customisation`;
 
     drop table if exists `donaire_bulletin`;
 
@@ -33,11 +37,15 @@
 
     drop table if exists `gonzalez_bulletin`;
 
+    drop table if exists `inquire`;
+
     drop table if exists `jimenez_bulletin`;
 
     drop table if exists `marin_bulletin`;
 
     drop table if exists `notice`;
+
+    drop table if exists `overture`;
 
     drop table if exists `provider`;
 

@@ -54,7 +54,16 @@
 		<property name="title" value="Notice 1"/>
 		<property name="creationMoment" value="2020/07/21 18:00"/>
 		<property name="deadline" value="2020/12/20 17:00"/>
-		<property name="body" value="Body Notice01"/>
+		<property name="body" value="Body Notice 1"/>
+		<property name="links" value=""/>
+	</bean>
+	<!-- Notice2 -->
+	<bean id="Notice02" class="acme.entities.notices.Notice">
+		<property name="headerPicture" value="https://ar.pinterest.com/pin/833940055989345675/"/>
+		<property name="title" value="Notice 2"/>
+		<property name="creationMoment" value="2020/07/21 18:00"/>
+		<property name="deadline" value="2020/07/22 11:00"/>
+		<property name="body" value="Body Notice 2, esta noticia solo deberia de aparecer cuando somos Admin"/>
 		<property name="links" value=""/>
 	</bean>
 
