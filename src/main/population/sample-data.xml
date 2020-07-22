@@ -25,8 +25,8 @@
 	</bean>
 	<!-- DonaireBulletin -->
 	<bean id="DonaireBulletin01" class="acme.entities.bulletins.DonaireBulletin">
-		<property name="web" value="https://www.idealista.com/"/>
-		<property name="description" value="Página para alquilar o comprar pisos o casas"/>
+		<property name="author" value="Carlos Ruiz Zafón"/>
+		<property name="text" value="La sombra del viento"/>
 		<property name="moment" value="2020/05/01 21:00"/>
 	</bean>
 	<!-- FernandezBulletin -->

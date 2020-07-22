@@ -22,7 +22,7 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-marin" action="http://www.game.es/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-fernandez" action="http://weplan.appspot.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-jimenez" action="http://spotymp3.appspot.com/"/>
-			<acme:menu-suboption code="master.menu.anonymous.favourite-link-donaire" action="https://www.idealista.com/"/>
+			<acme:menu-suboption code="master.menu.anonymous.favourite-link-donaire" action="https://books.google.es/books/about/La_Sombra_del_Viento.html?id=fYa_hJ4bWnsC&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-gonzalez" action="https://www.youtube.com/watch?v=D0p3TBAn7x0"/>
 			
 			<acme:menu-separator />
