@@ -59,9 +59,9 @@
     create table `donaire_bulletin` (
        `id` integer not null,
         `version` integer not null,
-        `description` varchar(255),
+        `author` varchar(255),
         `moment` datetime(6),
-        `web` varchar(255),
+        `text` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -149,6 +149,20 @@
         `user_account_id` integer,
         `company` varchar(255),
         `sector` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `technology` (
+       `id` integer not null,
+        `version` integer not null,
+        `activity_sector` varchar(255),
+        `description` varchar(255),
+        `email` varchar(255),
+        `indication` varchar(255),
+        `inventor_name` varchar(255),
+        `stars` integer,
+        `title` varchar(255),
+        `web_site` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
