@@ -7,14 +7,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.bulletins.DonaireBulletin;
+
 import acme.entities.notices.Notice;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Anonymous;
 
 @Controller
-@RequestMapping("/anonymous/notices/")
+@RequestMapping("/anonymous/notice/")
 public class AnonymousNoticeController extends AbstractController<Anonymous, Notice> {
 
 	// Internal state ---------------------------------------------------------

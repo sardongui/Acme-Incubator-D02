@@ -47,9 +47,9 @@
 		<property name="description" value="Página para escuchar música."></property>
 		<property name="moment" value="2020/07/10 17:00"/>
 	</bean>
-	
-	<bean id="Notice01" class="acme.entities.notices.notice">
-		<property name="headerPicture" value=""/>
+	<!-- Notice1 -->
+	<bean id="Notice01" class="acme.entities.notices.Notice">
+		<property name="headerPicture" value="https://ar.pinterest.com/pin/833940055989345675/"/>
 		<property name="title" value="Notice 1"/>
 		<property name="creationMoment" value="2020/07/21 18:00"/>
 		<property name="deadline" value="2020/12/20 17:00"/>

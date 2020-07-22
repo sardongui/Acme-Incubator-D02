@@ -16,7 +16,7 @@ public interface AnonymousNoticeRepository extends AbstractRepository {
 	@Query("select n from Notice n where n.id = ?1")
 	Notice findOneById(int id);
 	
-	@Query("select n from Notice n where n.creationDate > CURRENT_TIMESTAMP")
+	@Query("select n from Notice n where n.creationMoment > CURRENT_TIMESTAMP")
 	Collection<Notice> findMany();
 	
 }

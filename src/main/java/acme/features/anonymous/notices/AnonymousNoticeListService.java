@@ -1,10 +1,8 @@
 
 package acme.features.anonymous.notices;
 
-import java.util.Calendar;
 import java.util.Collection;
-import java.util.Date;
-import java.util.GregorianCalendar;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -35,8 +33,7 @@ public class AnonymousNoticeListService implements AbstractListService<Anonymous
 		assert request != null;
 
 
-		Collection<Notice> result;
-		result = this.repository.findMany();
+		Collection<Notice> result = this.repository.findMany();
 
 		return result;
 	}

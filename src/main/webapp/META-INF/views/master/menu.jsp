@@ -38,7 +38,7 @@
 			<acme:menu-suboption code="master.menu.anonymous.list-gonzalez-bulletin" action="/anonymous/gonzalez-bulletin/list" />
 			<acme:menu-suboption code="master.menu.anonymous.create-gonzalez-bulletin" action="/anonymous/gonzalez-bulletin/create" />
 		</acme:menu-option>
-		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
+		<acme:menu-option code="master.menu.anonymous.notice" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.list-notice" action="/anonymous/notice/list"/>
 		</acme:menu-option>
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">

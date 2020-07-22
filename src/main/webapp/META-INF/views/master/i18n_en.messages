@@ -29,6 +29,7 @@ master.menu.sign-out = Sign out
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anonymous
+master.menu.anonymous.notice = Notice
 master.menu.anonymous.favourite-link = Anonymous favourite link
 master.menu.anonymous.favourite-link-marin = Marin's favourite link
 master.menu.anonymous.favourite-link-fernandez = Fernandez's favourite link

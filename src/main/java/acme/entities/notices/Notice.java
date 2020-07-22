@@ -14,6 +14,7 @@ package acme.entities.notices;
 import java.util.Date;
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.URL;
@@ -49,6 +50,7 @@ public class Notice extends DomainEntity{
 	private Date		creationMoment;
 	
 	@Temporal(TemporalType.TIMESTAMP)
+	@NotNull
 	private Date       		deadline; 
 	
 	@NotBlank
