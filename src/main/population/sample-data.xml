@@ -194,14 +194,14 @@
 		<property name="deadline" value="2020/11/20 10:00" />
 		<property name="description" value="This is a description 1" />
 		<property name="email" value="overture01@gmail.com" />
-		<property name="minMoney" value="300.0€" />
+		<property name="minMoney" value="100.0€" />
 		<property name="maxMoney" value="700.0€" />
 	</bean>
 	
 	<bean id="Overture02" class="acme.entities.overtures.Overture">
 		<property name="title" value="Title 2" />
 		<property name="moment" value="2020/01/01 15:00" />
-		<property name="deadline" value="2020/04/10 10:00" />
+		<property name="deadline" value="2020/11/10 10:00" />
 		<property name="description" value="This is a description 2" />
 		<property name="email" value="overture2@gmail.com" />
 		<property name="minMoney" value="200.0€" />
@@ -217,7 +217,7 @@
 		<property name="sector" value="Sector 1" />
 		<property name="inventor" value="Inventor 1" />
 		<property name="description" value="This is a description 1" />
-		<property name="web" value="https//www.website1.com/" />
+		<property name="web" value="https://www.website1.com/" />
 		<property name="email" value="email1@gmail.com" />
 		<property name="openSource" value="true" />
 		<property name="stars" value="2" />
@@ -228,7 +228,7 @@
 		<property name="sector" value="Sector 2" />
 		<property name="inventor" value="Inventor 2" />
 		<property name="description" value="This is a description 2" />
-		<property name="web" value="https//www.website2.com/" />
+		<property name="web" value="https://www.website2.com/" />
 		<property name="email" value="email2@gmail.com" />
 		<property name="openSource" value="false" />
 		<property name="stars" value="-3" />
@@ -239,7 +239,7 @@
 		<property name="sector" value="Sector 3" />
 		<property name="inventor" value="Inventor 3" />
 		<property name="description" value="This is a description 3" />
-		<property name="web" value="https//www.website3.com/" />
+		<property name="web" value="https://www.website3.com/" />
 		<property name="email" value="email3@gmail.com" />
 		<property name="openSource" value="true" />
 		<property name="stars" value="5" />
@@ -250,7 +250,7 @@
 		<property name="sector" value="Sector 1" />
 		<property name="inventor" value="Inventor 2" />
 		<property name="description" value="This is a description 4" />
-		<property name="web" value="https//www.website4.com/" />
+		<property name="web" value="https://www.website4.com/" />
 		<property name="email" value="email4@gmail.com" />
 		<property name="openSource" value="false" />
 		<property name="stars" value="2" />
@@ -261,7 +261,7 @@
 		<property name="sector" value="Sector 3" />
 		<property name="inventor" value="Inventor 1" />
 		<property name="description" value="This is a description 5" />
-		<property name="web" value="https//www.website5.com/" />
+		<property name="web" value="https://www.website5.com/" />
 		<property name="email" value="email5@gmail.com" />
 		<property name="openSource" value="true" />
 		<property name="stars" value="5" />
