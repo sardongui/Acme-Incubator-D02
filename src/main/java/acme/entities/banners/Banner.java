@@ -2,13 +2,13 @@
 package acme.entities.banners;
 
 import javax.persistence.Entity;
-import javax.persistence.OneToOne;
-import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Pattern;
 
+import org.hibernate.validator.constraints.CreditCardNumber;
+import org.hibernate.validator.constraints.Range;
 import org.hibernate.validator.constraints.URL;
 
-import acme.entities.creditCards.CreditCard;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -31,7 +31,18 @@ public class Banner extends DomainEntity {
 	@URL
 	private String				url;
 
-	@Valid
-	@OneToOne
-	private CreditCard			creditCard;
+	private String				holderName;
+
+	@CreditCardNumber
+	private String				number;
+
+	private String				brand;
+
+	@Range(min = 1, max = 12)
+	private Integer				monthExpiration;
+
+	private Integer				yearExpiration;
+
+	@Pattern(regexp = "^[0-9]{3}$", message = "{administrator.creditCard.ccv.pattern}")
+	private Integer				cvv;
 }
