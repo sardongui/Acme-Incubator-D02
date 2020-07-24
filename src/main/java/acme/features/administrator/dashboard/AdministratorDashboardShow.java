@@ -1,9 +1,15 @@
 
 package acme.features.administrator.dashboard;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.inquires.Inquire;
+import acme.entities.overtures.Overture;
 import acme.forms.Dashboard;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -29,7 +35,7 @@ public class AdministratorDashboardShow implements AbstractShowService<Administr
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "numberNotices", "numberTechnologies", "minMoneyActiveInquires", "maxMoneyActiveInquires", "averageMoneyActiveInquires", "stddevMoneyActiveInquires", "minMoneyActiveOvertures", "maxMoneyActiveOvertures",
+		request.unbind(entity, model, "numberNotices", "numberTechnologies", "numberTools", "minMoneyActiveInquires", "maxMoneyActiveInquires", "averageMoneyActiveInquires", "stddevMoneyActiveInquires", "minMoneyActiveOvertures", "maxMoneyActiveOvertures",
 			"averageMoneyActiveOvertures", "stddevMoneyActiveOvertures");
 	}
 
@@ -52,19 +58,44 @@ public class AdministratorDashboardShow implements AbstractShowService<Administr
 		res.setMaxMoneyActiveInquires(maxMonInq);
 		Double avgMonInq = this.repository.avgMoneyActiveInquires();
 		res.setAverageMoneyActiveInquires(avgMonInq);
-		Double stdMoneyInq = this.repository.stddevMoneyActiveInquires();
-		res.setStddevMoneyActiveInquires(stdMoneyInq);
+		//STDDEV OVERTURE
+		Collection<Inquire> stdMonInq = this.repository.stddevMoneyActiveInquires();
+		List<Inquire> inqs = (List<Inquire>) stdMonInq;
+		List<Double> maxAndMinI = new ArrayList<Double>();
+		for (int i = 0; i < stdMonInq.size(); i++) {
+			maxAndMinI.add(inqs.get(i).getMinMoney().getAmount());
+			maxAndMinI.add(inqs.get(i).getMaxMoney().getAmount());
+		}
+		Double stddevInq = AdministratorDashboardShow.stdev(maxAndMinI, avgMonInq);
+		res.setStddevMoneyActiveInquires(stddevInq);
+		//
 		Double minMonOver = this.repository.minMoneyActiveOvertures();
 		res.setMinMoneyActiveOvertures(minMonOver);
 		Double maxMonOver = this.repository.maxMoneyActiveOvertures();
 		res.setMaxMoneyActiveOvertures(maxMonOver);
 		Double avgMonOver = this.repository.avgMoneyActiveOvertures();
 		res.setAverageMoneyActiveOvertures(avgMonOver);
-		Double stdMonOver = this.repository.stddevMoneyActiveOvertures();
-		res.setStddevMoneyActiveOvertures(stdMonOver);
-
+		//STDDEV OVERTURE
+		Collection<Overture> stdMonOver = this.repository.stddevMoneyActiveOvertures();
+		List<Overture> overs = (List<Overture>) stdMonOver;
+		List<Double> maxAndMinO = new ArrayList<Double>();
+		for (int i = 0; i < stdMonOver.size(); i++) {
+			maxAndMinO.add(overs.get(i).getMinMoney().getAmount());
+			maxAndMinO.add(overs.get(i).getMaxMoney().getAmount());
+		}
+		Double stddevOver = AdministratorDashboardShow.stdev(maxAndMinO, avgMonOver);
+		res.setStddevMoneyActiveOvertures(stddevOver);
 		return res;
+	}
 
+	public static double stdev(final List<Double> list, final Double mean) {
+		double num = 0.0;
+		double numi = 0.0;
+		for (Double i : list) {
+			numi = Math.pow(i - mean, 2);
+			num += numi;
+		}
+		return Math.sqrt(num / list.size());
 	}
 
 }
