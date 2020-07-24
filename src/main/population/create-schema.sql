@@ -166,6 +166,20 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `tool_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `description` varchar(255),
+        `email` varchar(255),
+        `indication` varchar(255),
+        `inventor` varchar(255),
+        `sector` varchar(255),
+        `stars` integer,
+        `title` varchar(255),
+        `web` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `user_account` (
        `id` integer not null,
         `version` integer not null,

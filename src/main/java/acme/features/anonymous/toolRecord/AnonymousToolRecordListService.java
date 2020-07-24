@@ -20,6 +20,7 @@ public class AnonymousToolRecordListService implements AbstractListService<Anony
 	@Autowired
 	AnonymousToolRecordRepository repository;
 
+
 	// PARA ANONIMOS
 	@Override
 	public boolean authorise(final Request<ToolRecord> request) {
@@ -39,8 +40,9 @@ public class AnonymousToolRecordListService implements AbstractListService<Anony
 	@Override
 	public Collection<ToolRecord> findMany(final Request<ToolRecord> request) {
 		assert request != null;
-		Collection<ToolRecord> res = this.repository.findManyAll();
-		return res;
+		Collection<ToolRecord> result;
+		result = this.repository.findManyAll();
+		return result;
 	}
 
 }

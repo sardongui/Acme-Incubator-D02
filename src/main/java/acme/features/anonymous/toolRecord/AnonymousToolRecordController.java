@@ -13,7 +13,7 @@ import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Anonymous;
 
 @Controller
-@RequestMapping("/anonymous/toolRecord/")
+@RequestMapping("/anonymous/tool-record/")
 public class AnonymousToolRecordController extends AbstractController<Anonymous, ToolRecord> {
 
 	@Autowired

@@ -45,8 +45,8 @@ public class AuthenticatedToolRecordListService implements AbstractListService<A
 	@Override
 	public Collection<ToolRecord> findMany(final Request<ToolRecord> request) {
 		assert request != null;
-		Collection<ToolRecord> res = this.repository.findManyAll();
-		return res;
+		Collection<ToolRecord> result;
+		result = this.repository.findManyAll();
+		return result;
 	}
-
 }

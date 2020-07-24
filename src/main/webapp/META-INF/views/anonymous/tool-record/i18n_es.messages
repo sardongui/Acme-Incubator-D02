@@ -4,7 +4,7 @@ anonymous.tool-record.form.label.inventor = Nombre del inventor:
 anonymous.tool-record.form.label.description = Descripcion:
 anonymous.tool-record.form.label.web = Sitio web:
 anonymous.tool-record.form.label.email = Email:
-anonymous.tool-record.form.label.openSource = Codigo abierto:
+anonymous.tool-record.form.label.indication = Codigo abierto:
 anonymous.tool-record.form.label.stars = Numero de estrellas:
 anonymous.tool-record.form.button.return = Volver
 
