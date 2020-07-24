@@ -4,7 +4,7 @@ authenticated.tool-record.form.label.inventor = Nombre del inventor:
 authenticated.tool-record.form.label.description = Descripcion:
 authenticated.tool-record.form.label.web = Sitio web:
 authenticated.tool-record.form.label.email = Email:
-authenticated.tool-record.form.label.openSource = Codigo abierto:
+authenticated.tool-record.form.label.indication = Codigo abierto:
 authenticated.tool-record.form.label.stars = Numero de estrellas:
 authenticated.tool-record.form.button.return = Volver
 

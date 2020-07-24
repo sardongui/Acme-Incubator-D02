@@ -4,7 +4,7 @@ authenticated.tool-record.form.label.inventor = Inventor name:
 authenticated.tool-record.form.label.description = Description:
 authenticated.tool-record.form.label.web = Web site:
 authenticated.tool-record.form.label.email = Email:
-authenticated.tool-record.form.label.openSource = Open source:
+authenticated.tool-record.form.label.indication = Open source:
 authenticated.tool-record.form.label.stars = Number of stars:
 authenticated.tool-record.form.button.return = Return
 

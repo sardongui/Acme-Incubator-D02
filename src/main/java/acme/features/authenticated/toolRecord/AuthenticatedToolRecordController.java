@@ -13,7 +13,7 @@ import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Authenticated;
 
 @Controller
-@RequestMapping("/authenticated/toolRecord/")
+@RequestMapping("/authenticated/tool-record/")
 public class AuthenticatedToolRecordController extends AbstractController<Authenticated, ToolRecord> {
 
 	@Autowired

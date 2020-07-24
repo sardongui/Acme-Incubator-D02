@@ -12,12 +12,10 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AnonymousToolRecordRepository extends AbstractRepository {
 
-	@Query("Select t from ToolRecord t where t.id = ?1")
-	ToolRecord findOne(int id);
-	
+	@Query("select t from ToolRecord t where t.id = ?1")
+	ToolRecord findOneById(int id);
+
 	@Query("select t from ToolRecord t")
 	Collection<ToolRecord> findManyAll();
-	
-	@Query("select t from ToolRecord t where t.stars = 5")
-	Collection<ToolRecord> findManyTop();
+
 }

@@ -10,7 +10,7 @@
 	<acme:form-textarea code="authenticated.tool-record.form.label.description" path="description" />
 	<acme:form-url code="authenticated.tool-record.form.label.web" path="web" />
 	<acme:form-textbox code="authenticated.tool-record.form.label.email" path="email" />
-	<acme:form-textbox code="authenticated.tool-record.form.label.openSource" path="openSource" />
+	<acme:form-textbox code="authenticated.tool-record.form.label.indication" path="indication" />
 	<acme:form-textbox code="authenticated.tool-record.form.label.stars" path="stars" />
 	
 	<acme:form-return code="authenticated.tool-record.form.button.return" />

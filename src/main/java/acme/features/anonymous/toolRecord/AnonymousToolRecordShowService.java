@@ -32,15 +32,20 @@ public class AnonymousToolRecordShowService implements AbstractShowService<Anony
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		request.unbind(entity, model, "title", "sector", "inventor", "description", "web", "email", "openSource", "stars");
+		request.unbind(entity, model, "title", "sector", "inventor", "description", "web", "email", "indication", "stars");
 	}
 
 	@Override
 	public ToolRecord findOne(final Request<ToolRecord> request) {
 		assert request != null;
-		int id = request.getModel().getInteger("id");
-		ToolRecord res = this.repository.findOne(id);
-		return res;
+		
+		ToolRecord result;
+		int id;
+		
+		id = request.getModel().getInteger("id");
+		result = this.repository.findOneById(id);
+		
+		return result;
 	}
 
 }
