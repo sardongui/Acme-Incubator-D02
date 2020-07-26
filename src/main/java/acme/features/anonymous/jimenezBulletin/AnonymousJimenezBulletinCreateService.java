@@ -44,7 +44,7 @@ public class AnonymousJimenezBulletinCreateService implements AbstractCreateServ
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "web", "description");
+		request.unbind(entity, model, "heroName", "phrase");
 	}
 
 	@Override
@@ -52,9 +52,6 @@ public class AnonymousJimenezBulletinCreateService implements AbstractCreateServ
 		assert request != null;
 
 		JimenezBulletin result = new JimenezBulletin();
-
-		result.setWeb("http://youtube.com");
-		result.setDescription("Página para ver vídeos.");
 
 		return result;
 	}
