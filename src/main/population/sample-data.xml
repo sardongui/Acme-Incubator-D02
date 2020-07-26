@@ -51,8 +51,8 @@
 	
 	<!-- GonzalezBulletin -->
 	<bean id="GonzalezBulletin01" class="acme.entities.bulletins.GonzalezBulletin">
-		<property name="web" value="https://www.spotify.com/"/>
-		<property name="description" value="Página para escuchar música."/>
+		<property name="movie" value="Interstellar"/>
+		<property name="director" value="Christopher Nolan"/>
 		<property name="moment" value="2020/07/10 17:00"/>
 	</bean>
 
