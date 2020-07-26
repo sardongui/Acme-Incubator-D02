@@ -23,8 +23,8 @@
 	
 	<!-- JimenezBulletin -->
 	<bean id="JimenezBulletin01" class="acme.entities.bulletins.JimenezBulletin">
-		<property name="web" value="http://youtube.com"/>
-		<property name="description" value="Página para ver vídeos"/>
+		<property name="heroName" value="Thanos"/>
+		<property name="phrase" value="Yo soy inevitable"/>
 		<property name="moment" value="2020/01/20 10:00"/>
 	</bean>
 	
