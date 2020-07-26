@@ -20,6 +20,21 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `brand` varchar(255),
+        `cvv` integer,
+        `holder_name` varchar(255),
+        `month_expiration` integer,
+        `number` varchar(255),
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `url` varchar(255),
+        `year_expiration` integer,
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `challenge` (
        `id` integer not null,
         `version` integer not null,
@@ -101,9 +116,9 @@
     create table `jimenez_bulletin` (
        `id` integer not null,
         `version` integer not null,
-        `description` varchar(255),
+        `hero_name` varchar(255),
         `moment` datetime(6),
-        `web` varchar(255),
+        `phrase` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 

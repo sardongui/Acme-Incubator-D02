@@ -16,7 +16,7 @@ public interface AuthenticatedNoticeRepository extends AbstractRepository {
 	@Query("select n from Notice n where n.id = ?1")
 	Notice findOneById(int id);
 	
-	@Query("select n from Notice n")
+	@Query("select n from Notice n where n.deadline > CURRENT_TIMESTAMP")
 	Collection<Notice> findManyNotices();
 	
 }
