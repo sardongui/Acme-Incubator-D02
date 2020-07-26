@@ -55,6 +55,7 @@
 			<acme:menu-suboption code="master.menu.authenticated.list-notice" action="/authenticated/notice/list"/>
 
 		</acme:menu-option>
+		
 		<acme:menu-option code="master.menu.authenticated.technology" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.list-technology" action="/authenticated/technology/list"/>
 		</acme:menu-option>
@@ -72,6 +73,7 @@
 		<acme:menu-option code="master.menu.authenticated.inquire" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.list-inquire" action="/authenticated/inquire/list"/>
 		</acme:menu-option>
+
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
