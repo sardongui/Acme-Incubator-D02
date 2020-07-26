@@ -55,6 +55,7 @@ master.menu.anonymous.list-notice = Lista de Anuncios
 master.menu.authenticated.list-inquire = List de consultas
 
 master.menu.authenticated.list-challenge = Lista de desafios
+master.menu.authenticated1.list-notice = Lista de noticias 
 
 master.menu.authenticated = Autenticado
 master.menu.authenticated.list-overture = List de oberturas
@@ -68,6 +69,7 @@ master.menu.administrator.customisation = Customización
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.list-notice = Lista noticias
 master.menu.administrator.chart = Graficos
+
 
 # master.menu.provider ########################################################
 

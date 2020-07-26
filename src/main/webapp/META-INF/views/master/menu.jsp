@@ -41,18 +41,15 @@
 
 		<acme:menu-option code="master.menu.anonymous.notice" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.list-notice" action="/anonymous/notice/list"/>
-		</acme:menu-option>
 
-		
-		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
-			<acme:menu-suboption code="master.menu.authenticated.list-inquire" action="/authenticated/inquire/list"/>
 		</acme:menu-option>
-
+	
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
 
 			<acme:menu-suboption code="master.menu.authenticated.list-challenge" action="/authenticated/challenge/list"/>
-
+			<acme:menu-suboption code="master.menu.authenticated.list-notice" action="/authenticated/notice/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.list-overture" action="/authenticated/overture/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-inquire" action="/authenticated/inquire/list"/>
 
 		</acme:menu-option>
 
