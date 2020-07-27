@@ -28,7 +28,9 @@ master.menu.sign-out = Sign out
 
 # master.menu.anonymous #######################################################
 
+
 master.menu.anonymous = Bulletins
+
 master.menu.anonymous.notice = Notice
 master.menu.anonymous.favourite-link = Anonymous favourite link
 master.menu.anonymous.favourite-link-marin = Marin's favourite link
@@ -62,9 +64,11 @@ master.menu.anonymous.list-technology = List of Technology Record
 
 master.menu.anonymous.tool-record = Tool Record
 master.menu.anonymous.list-tool-record = List of Tool Record
+
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Authenticated
+
 
 master.menu.authenticated.inquire = Inquire
 master.menu.authenticated.list-inquire = List of inquires
@@ -72,9 +76,8 @@ master.menu.authenticated.list-inquire = List of inquires
 master.menu.authenticated.challenge = Challenges
 master.menu.authenticated.list-challenge = List of challenges
 master.menu.authenticated.overture = Overtures
+
 master.menu.authenticated.list-overture = List of overtures
-
-
 
 master.menu.authenticated.notice = Notice
 master.menu.authenticated.list-notice = List of Notice
@@ -94,6 +97,9 @@ master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.customisation = Customisation
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.list-notice = List notice
+
+master.menu.administrator.dashboard = Dashboard
+
 master.menu.administrator.chart = Chart
 
 # master.menu.provider ########################################################
