@@ -28,8 +28,10 @@ master.menu.sign-out = Sign out
 
 # master.menu.anonymous #######################################################
 
+
 master.menu.anonymous = Bulletins
 
+master.menu.anonymous.notice = Notice
 master.menu.anonymous.favourite-link = Anonymous favourite link
 master.menu.anonymous.favourite-link-marin = Marin's favourite link
 master.menu.anonymous.favourite-link-fernandez = Fernandez's favourite link
@@ -47,6 +49,12 @@ master.menu.anonymous.list-fernandez-bulletin = Fernandez's bulletin
 master.menu.anonymous.create-fernandez-bulletin = Publish in Fernandez's bulletin
 master.menu.anonymous.list-gonzalez-bulletin = Gonzalez's bulletin
 master.menu.anonymous.create-gonzalez-bulletin = Publish in Gonzalez's bulletin
+
+master.menu.anonymous.technology = Registro de Tecnologia
+master.menu.anonymous.list-technology = Lista de registros de tecnologia
+
+master.menu.anonymous.tool-record = Registro de Herramientas
+master.menu.anonymous.list-tool-record = List registros de herramientas
 
 master.menu.anonymous.notice = Notice
 master.menu.anonymous.list-notice = List of Notice
