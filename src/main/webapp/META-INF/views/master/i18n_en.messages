@@ -31,7 +31,6 @@ master.menu.sign-out = Sign out
 
 master.menu.anonymous = Bulletins
 
-master.menu.anonymous.notice = Notice
 master.menu.anonymous.favourite-link = Anonymous favourite link
 master.menu.anonymous.favourite-link-marin = Marin's favourite link
 master.menu.anonymous.favourite-link-fernandez = Fernandez's favourite link
@@ -50,19 +49,15 @@ master.menu.anonymous.create-fernandez-bulletin = Publish in Fernandez's bulleti
 master.menu.anonymous.list-gonzalez-bulletin = Gonzalez's bulletin
 master.menu.anonymous.create-gonzalez-bulletin = Publish in Gonzalez's bulletin
 
-master.menu.anonymous.technology = Registro de Tecnologia
-master.menu.anonymous.list-technology = Lista de registros de tecnologia
+master.menu.anonymous.links = Links
 
-master.menu.anonymous.tool-record = Registro de Herramientas
-master.menu.anonymous.list-tool-record = List registros de herramientas
-
-master.menu.anonymous.notice = Notice
+master.menu.anonymous.notice = Notices
 master.menu.anonymous.list-notice = List of Notice
 
-master.menu.anonymous.technology = Technology Record
+master.menu.anonymous.technology = Technology Records
 master.menu.anonymous.list-technology = List of Technology Record
 
-master.menu.anonymous.tool-record = Tool Record
+master.menu.anonymous.tool-record = Tool Records
 master.menu.anonymous.list-tool-record = List of Tool Record
 
 # master.menu.authenticated ###################################################
@@ -70,25 +65,25 @@ master.menu.anonymous.list-tool-record = List of Tool Record
 master.menu.authenticated = Authenticated
 
 
-master.menu.authenticated.inquire = Inquire
+master.menu.authenticated.inquire = Inquires
 master.menu.authenticated.list-inquire = List of inquires
 
 master.menu.authenticated.challenge = Challenges
 master.menu.authenticated.list-challenge = List of challenges
-master.menu.authenticated.overture = Overtures
 
+master.menu.authenticated.overture = Overtures
 master.menu.authenticated.list-overture = List of overtures
 
-master.menu.authenticated.notice = Notice
-master.menu.authenticated.list-notice = List of Notice
+master.menu.authenticated.notice = Notices
+master.menu.authenticated.list-notice = List of Notices
 
-master.menu.authenticated.technology = Technology Record
-master.menu.authenticated.list-technology = List of Technology Record
+master.menu.authenticated.technology = Technology Records
+master.menu.authenticated.list-technology = List of Technology Records
 
-master.menu.authenticated.tool-record = Tool Record
-master.menu.authenticated.list-tool-record = List of Tool Record
+master.menu.authenticated.tool-record = Tool Records
+master.menu.authenticated.list-tool-record = List of Tool Records
 
-master.menu.authenticated.challenge = Challenge
+
 
 # master.menu.administrator ###################################################
 
