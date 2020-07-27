@@ -44,7 +44,7 @@ public class AnonymousFernandezBulletinCreateService implements AbstractCreateSe
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "web", "description");
+		request.unbind(entity, model, "nameCharacter", "skills");
 
 	}
 
@@ -57,8 +57,8 @@ public class AnonymousFernandezBulletinCreateService implements AbstractCreateSe
 
 		moment = new Date(System.currentTimeMillis() - 1);
 		result = new FernandezBulletin();
-		result.setWeb("http://weplan.appspot.com/");
-		result.setDescription("Página para buscar eventos.");
+		result.setNameCharacter("Artorias");
+		result.setSkills("swordmen");
 		result.setMoment(moment);
 
 		return result;

@@ -44,7 +44,7 @@ public class AnonymousGonzalezBulletinCreateService implements AbstractCreateSer
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "web", "description");
+		request.unbind(entity, model, "movie", "director");
 	}
 
 	@Override
@@ -53,8 +53,8 @@ public class AnonymousGonzalezBulletinCreateService implements AbstractCreateSer
 
 		GonzalezBulletin result = new GonzalezBulletin();
 
-		result.setWeb("http://spotify.com");
-		result.setDescription("Página para escuchar música.");
+		result.setMovie("Interstellar");
+		result.setDirector("Christopher Nolan");
 
 		return result;
 	}
