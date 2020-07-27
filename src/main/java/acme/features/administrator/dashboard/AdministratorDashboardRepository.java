@@ -6,7 +6,7 @@ import java.util.Collection;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import acme.entities.inquires.Inquire;
+import acme.entities.inquiries.Inquirie;
 import acme.entities.overtures.Overture;
 import acme.framework.repositories.AbstractRepository;
 
@@ -31,8 +31,8 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select avg ((max_money_amount + min_money_amount)/2) from Inquirie where endDate>CURRENT_TIMESTAMP")
 	Double avgMoneyActiveInquiries();
 
-	@Query("select stddev((max_money_amount + min_money_amount)) from Inquirie where endDate>CURRENT_TIMESTAMP")
-	Double stddevMoneyActiveInquiries();
+	@Query("select o from Inquirie o where endDate>CURRENT_TIMESTAMP")
+	Collection<Inquirie> stddevMoneyActiveInquiries();
 
 	@Query("select min (minMoney.amount) from Overture where deadline>CURRENT_TIMESTAMP")
 	Double minMoneyActiveOvertures();
