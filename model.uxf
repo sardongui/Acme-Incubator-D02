@@ -300,7 +300,7 @@ has v</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>468</y>
+      <y>792</y>
       <w>279</w>
       <h>90</h>
     </coordinates>
@@ -317,7 +317,7 @@ bg=green</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>576</y>
+      <y>468</y>
       <w>279</w>
       <h>90</h>
     </coordinates>
@@ -333,8 +333,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>306</x>
-      <y>468</y>
+      <x>0</x>
+      <y>900</y>
       <w>279</w>
       <h>90</h>
     </coordinates>
@@ -350,16 +350,16 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>306</x>
-      <y>576</y>
+      <x>0</x>
+      <y>684</y>
       <w>279</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 GonzalezBulletin
 --
-+ author: String {NotBlank}
-+ text: String {NotBlank}
++ movie: String {NotBlank}
++ director: String {NotBlank}
 + moment: Date {Temporal(TIMESTAMP), Past}
 bg=green</panel_attributes>
     <additional_attributes/>
@@ -368,15 +368,15 @@ bg=green</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>684</y>
+      <y>576</y>
       <w>279</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 FernandezBulletin
 --
-+ author: String {NotBlank}
-+ text: String {NotBlank}
++ nameCharacter: String {NotBlank}
++ skills: String {NotBlank}
 + moment: Date {Temporal(TIMESTAMP), Past}
 bg=green</panel_attributes>
     <additional_attributes/>
@@ -384,8 +384,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>306</x>
-      <y>684</y>
+      <x>369</x>
+      <y>468</y>
       <w>279</w>
       <h>171</h>
     </coordinates>
@@ -407,8 +407,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>792</y>
+      <x>369</x>
+      <y>657</y>
       <w>279</w>
       <h>171</h>
     </coordinates>
@@ -430,8 +430,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>981</y>
+      <x>369</x>
+      <y>945</y>
       <w>279</w>
       <h>144</h>
     </coordinates>
@@ -451,8 +451,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>612</x>
-      <y>1017</y>
+      <x>369</x>
+      <y>846</y>
       <w>279</w>
       <h>81</h>
     </coordinates>
@@ -468,8 +468,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>306</x>
-      <y>873</y>
+      <x>684</x>
+      <y>468</y>
       <w>279</w>
       <h>126</h>
     </coordinates>
@@ -488,8 +488,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>612</x>
-      <y>684</y>
+      <x>684</x>
+      <y>612</y>
       <w>279</w>
       <h>144</h>
     </coordinates>
@@ -509,8 +509,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>306</x>
-      <y>1017</y>
+      <x>684</x>
+      <y>774</y>
       <w>279</w>
       <h>153</h>
     </coordinates>
@@ -531,8 +531,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>612</x>
-      <y>846</y>
+      <x>684</x>
+      <y>945</y>
       <w>279</w>
       <h>153</h>
     </coordinates>
