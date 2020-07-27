@@ -23,8 +23,8 @@
 	
 	<!-- JimenezBulletin -->
 	<bean id="JimenezBulletin01" class="acme.entities.bulletins.JimenezBulletin">
-		<property name="web" value="http://youtube.com"/>
-		<property name="description" value="Página para ver vídeos"/>
+		<property name="heroName" value="Thanos"/>
+		<property name="phrase" value="Yo soy inevitable"/>
 		<property name="moment" value="2020/01/20 10:00"/>
 	</bean>
 	
@@ -37,8 +37,8 @@
 	
 	<!-- FernandezBulletin -->
 	<bean id="FernandezBulletin01" class="acme.entities.bulletins.FernandezBulletin">
-		<property name="web" value="http://weplan.appspot.com/"/>
-		<property name="description" value="Página para buscar eventos."/>
+		<property name="nameCharacter" value="Solaire"/>
+		<property name="skills" value="The power of sunlight"/>
 		<property name="moment" value="2020/03/01 21:00"/>
 	</bean>
 	
@@ -51,8 +51,8 @@
 	
 	<!-- GonzalezBulletin -->
 	<bean id="GonzalezBulletin01" class="acme.entities.bulletins.GonzalezBulletin">
-		<property name="web" value="https://www.spotify.com/"/>
-		<property name="description" value="Página para escuchar música."/>
+		<property name="movie" value="Interstellar"/>
+		<property name="director" value="Christopher Nolan"/>
 		<property name="moment" value="2020/07/10 17:00"/>
 	</bean>
 

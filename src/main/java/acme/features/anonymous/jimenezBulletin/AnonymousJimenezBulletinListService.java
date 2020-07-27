@@ -34,7 +34,7 @@ public class AnonymousJimenezBulletinListService implements AbstractListService<
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "web", "description", "moment");
+		request.unbind(entity, model, "heroName", "phrase", "moment");
 
 	}
 

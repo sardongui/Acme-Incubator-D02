@@ -9,8 +9,6 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
 
-import org.hibernate.validator.constraints.URL;
-
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -23,11 +21,10 @@ public class JimenezBulletin extends DomainEntity {
 	private static final long	serialVersionUID	= 1L;
 
 	@NotBlank
-	@URL
-	private String				web;
+	private String				heroName;
 
 	@NotBlank
-	private String				description;
+	private String				phrase;
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past

@@ -41,6 +41,7 @@
 
 		<acme:menu-option code="master.menu.anonymous.notice" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.list-notice" action="/anonymous/notice/list"/>
+
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.anonymous.technology" access="isAnonymous()">
@@ -51,17 +52,36 @@
 			<acme:menu-suboption code="master.menu.anonymous.list-tool-record" action="/anonymous/tool-record/list"/>
 		</acme:menu-option>
 
-		
-		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
-			<acme:menu-suboption code="master.menu.authenticated.list-inquire" action="/authenticated/inquire/list"/>
 		</acme:menu-option>
+		<acme:menu-option code="master.menu.anonymous.technology" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.anonymous.list-technology" action="/anonymous/technology/list"/>
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.anonymous.tool-record" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.anonymous.list-tool-record" action="/anonymous/tool-record/list"/>
+		</acme:menu-option>
+	
+		<acme:menu-option code="master.menu.authenticated.notice" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.list-notice" action="/authenticated/notice/list"/>
 
-		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
-
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.authenticated.technology" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.list-technology" action="/authenticated/technology/list"/>
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.authenticated.tool-record" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.list-tool-record" action="/authenticated/tool-record/list"/>
+		</acme:menu-option>
+		<acme:menu-option code="master.menu.authenticated.challenge" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.list-challenge" action="/authenticated/challenge/list"/>
-
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.authenticated.overture" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.list-overture" action="/authenticated/overture/list"/>
-
+		</acme:menu-option>
+		<acme:menu-option code="master.menu.authenticated.inquire" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.list-inquire" action="/authenticated/inquire/list"/>
 		</acme:menu-option>
 		
 				<acme:menu-option code="master.menu.authenticated.technology" access="isAuthenticated()">
@@ -72,10 +92,12 @@
 			<acme:menu-suboption code="master.menu.authenticated.list-tool-record" action="/authenticated/tool-record/list"/>
 		</acme:menu-option>
 
+
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-suboption code="master.menu.administrator.customisation" action="/administrator/customisation/show"/>
 			<acme:menu-suboption code="master.menu.administrator.list-notice" action="/administrator/notice/list"/>
+      <acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show"/>
 			<acme:menu-suboption code="master.menu.administrator.chart" action="/administrator/chart/show"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
@@ -105,4 +127,5 @@
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
 	</acme:menu-right>
 </acme:menu-bar>
+
 
