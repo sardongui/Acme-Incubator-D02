@@ -18,17 +18,17 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select count(tr) from ToolRecord tr")
 	Integer numberTools();
 
-	@Query("select min (minMoney.amount) from Inquire where endDate>CURRENT_TIMESTAMP")
-	Double minMoneyActiveInquires();
+	@Query("select min (minMoney.amount) from Inquirie where endDate>CURRENT_TIMESTAMP")
+	Double minMoneyActiveInquiries();
 
-	@Query("select max (maxMoney.amount) from Inquire where endDate>CURRENT_TIMESTAMP")
-	Double maxMoneyActiveInquires();
+	@Query("select max (maxMoney.amount) from Inquirie where endDate>CURRENT_TIMESTAMP")
+	Double maxMoneyActiveInquiries();
 
-	@Query("select avg ((max_money_amount + min_money_amount)/2) from Inquire where endDate>CURRENT_TIMESTAMP")
-	Double avgMoneyActiveInquires();
+	@Query("select avg ((max_money_amount + min_money_amount)/2) from Inquirie where endDate>CURRENT_TIMESTAMP")
+	Double avgMoneyActiveInquiries();
 
-	@Query("select stddev((max_money_amount + min_money_amount)) from Inquire where endDate>CURRENT_TIMESTAMP")
-	Double stddevMoneyActiveInquires();
+	@Query("select stddev((max_money_amount + min_money_amount)) from Inquirie where endDate>CURRENT_TIMESTAMP")
+	Double stddevMoneyActiveInquiries();
 
 	@Query("select min (minMoney.amount) from Overture where deadline>CURRENT_TIMESTAMP")
 	Double minMoneyActiveOvertures();

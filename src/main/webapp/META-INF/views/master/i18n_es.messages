@@ -62,8 +62,8 @@ master.menu.anonymous.list-tool-record = List registros de herramientas
 # master.menu.authenticated ###################################################
 
 
-master.menu.authenticated.inquire = Consultas
-master.menu.authenticated.list-inquire = List de consultas
+master.menu.authenticated.inquirie = Consultas
+master.menu.authenticated.list-inquirie = List de consultas
 master.menu.authenticated.challenge = Desafio
 master.menu.authenticated.list-challenge = Lista de desafios
 

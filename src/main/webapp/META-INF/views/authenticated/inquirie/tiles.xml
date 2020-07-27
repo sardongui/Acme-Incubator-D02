@@ -18,12 +18,12 @@
 
 <tiles-definitions>
 	
-	<definition name="authenticated/inquire/form" extends="master">
-		<put-attribute name="body" type="template" value="../authenticated/inquire/form.jsp"/>
+	<definition name="authenticated/inquirie/form" extends="master">
+		<put-attribute name="body" type="template" value="../authenticated/inquirie/form.jsp"/>
 	</definition>
 	
-	<definition name="authenticated/inquire/list" extends="master">		
-		<put-attribute name="body" type="template" value="../authenticated/inquire/list.jsp" />
+	<definition name="authenticated/inquirie/list" extends="master">		
+		<put-attribute name="body" type="template" value="../authenticated/inquirie/list.jsp" />
 	</definition>
 
 </tiles-definitions>

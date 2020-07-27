@@ -21,13 +21,13 @@ public class Dashboard implements Serializable {
 
 	Integer						numberTools;
 
-	Double						minMoneyActiveInquires;
+	Double						minMoneyActiveInquiries;
 
-	Double						maxMoneyActiveInquires;
+	Double						maxMoneyActiveInquiries;
 
-	Double						averageMoneyActiveInquires;
+	Double						averageMoneyActiveInquiries;
 
-	Double						stddevMoneyActiveInquires;
+	Double						stddevMoneyActiveInquiries;
 
 	Double						minMoneyActiveOvertures;
 

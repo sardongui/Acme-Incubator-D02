@@ -29,7 +29,7 @@ public class AdministratorDashboardShow implements AbstractShowService<Administr
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "numberNotices", "numberTechnologies", "minMoneyActiveInquires", "maxMoneyActiveInquires", "averageMoneyActiveInquires", "stddevMoneyActiveInquires", "minMoneyActiveOvertures", "maxMoneyActiveOvertures",
+		request.unbind(entity, model, "numberNotices", "numberTechnologies", "minMoneyActiveInquiries", "maxMoneyActiveInquiries", "averageMoneyActiveInquiries", "stddevMoneyActiveInquiries", "minMoneyActiveOvertures", "maxMoneyActiveOvertures",
 			"averageMoneyActiveOvertures", "stddevMoneyActiveOvertures");
 	}
 
@@ -46,14 +46,14 @@ public class AdministratorDashboardShow implements AbstractShowService<Administr
 		res.setNumberTechnologies(numTech);
 		Integer numToo = this.repository.numberTools();
 		res.setNumberTools(numToo);
-		Double minMonInq = this.repository.minMoneyActiveInquires();
-		res.setMinMoneyActiveInquires(minMonInq);
-		Double maxMonInq = this.repository.maxMoneyActiveInquires();
-		res.setMaxMoneyActiveInquires(maxMonInq);
-		Double avgMonInq = this.repository.avgMoneyActiveInquires();
-		res.setAverageMoneyActiveInquires(avgMonInq);
-		Double stdMoneyInq = this.repository.stddevMoneyActiveInquires();
-		res.setStddevMoneyActiveInquires(stdMoneyInq);
+		Double minMonInq = this.repository.minMoneyActiveInquiries();
+		res.setMinMoneyActiveInquiries(minMonInq);
+		Double maxMonInq = this.repository.maxMoneyActiveInquiries();
+		res.setMaxMoneyActiveInquiries(maxMonInq);
+		Double avgMonInq = this.repository.avgMoneyActiveInquiries();
+		res.setAverageMoneyActiveInquiries(avgMonInq);
+		Double stdMoneyInq = this.repository.stddevMoneyActiveInquiries();
+		res.setStddevMoneyActiveInquiries(stdMoneyInq);
 		Double minMonOver = this.repository.minMoneyActiveOvertures();
 		res.setMinMoneyActiveOvertures(minMonOver);
 		Double maxMonOver = this.repository.maxMoneyActiveOvertures();
