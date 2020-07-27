@@ -8,7 +8,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.inquires.Inquire;
+import acme.entities.inquiries.Inquirie;
 import acme.entities.overtures.Overture;
 import acme.forms.Dashboard;
 import acme.framework.components.Model;
@@ -35,7 +35,8 @@ public class AdministratorDashboardShow implements AbstractShowService<Administr
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "numberNotices", "numberTechnologies", "minMoneyActiveInquiries", "maxMoneyActiveInquiries", "averageMoneyActiveInquiries", "stddevMoneyActiveInquiries", "minMoneyActiveOvertures", "maxMoneyActiveOvertures",
+		request.unbind(entity, model, "numberNotices", "numberTechnologies", "numberTools", "minMoneyActiveInquiries", "maxMoneyActiveInquiries", "averageMoneyActiveInquiries", "stddevMoneyActiveInquiries", "minMoneyActiveOvertures",
+			"maxMoneyActiveOvertures",
 
 			"averageMoneyActiveOvertures", "stddevMoneyActiveOvertures");
 	}
@@ -59,16 +60,16 @@ public class AdministratorDashboardShow implements AbstractShowService<Administr
 		res.setMaxMoneyActiveInquiries(maxMonInq);
 		Double avgMonInq = this.repository.avgMoneyActiveInquiries();
 		res.setAverageMoneyActiveInquiries(avgMonInq);
-		//STDDEV OVERTURE
-		Collection<Inquire> stdMonInq = this.repository.stddevMoneyActiveInquires();
-		List<Inquire> inqs = (List<Inquire>) stdMonInq;
+		//STDDEV INQUIRIE
+		Collection<Inquirie> stdMonInq = this.repository.stddevMoneyActiveInquiries();
+		List<Inquirie> inqs = (List<Inquirie>) stdMonInq;
 		List<Double> maxAndMinI = new ArrayList<Double>();
 		for (int i = 0; i < stdMonInq.size(); i++) {
 			maxAndMinI.add(inqs.get(i).getMinMoney().getAmount());
 			maxAndMinI.add(inqs.get(i).getMaxMoney().getAmount());
 		}
 		Double stddevInq = AdministratorDashboardShow.stdev(maxAndMinI, avgMonInq);
-		res.setStddevMoneyActiveInquires(stddevInq);
+		res.setStddevMoneyActiveInquiries(stddevInq);
 		//
 		Double minMonOver = this.repository.minMoneyActiveOvertures();
 		res.setMinMoneyActiveOvertures(minMonOver);
