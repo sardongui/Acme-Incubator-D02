@@ -5,6 +5,6 @@
 
 <acme:list readonly="true">
 	<acme:list-column code="anonymous.fernandez-bulletin.list.label.moment" path="moment" width="20%" />
-	<acme:list-column code="anonymous.fernandez-bulletin.list.label.web" path="web" width="20%" />
-	<acme:list-column code="anonymous.fernandez-bulletin.list.label.description" path="description" width="60%" />
+	<acme:list-column code="anonymous.fernandez-bulletin.list.label.nameCharacter" path="nameCharacter" width="20%" />
+	<acme:list-column code="anonymous.fernandez-bulletin.list.label.skills" path="skills" width="60%" />
 </acme:list>

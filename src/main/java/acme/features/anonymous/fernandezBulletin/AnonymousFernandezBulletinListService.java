@@ -33,7 +33,7 @@ public class AnonymousFernandezBulletinListService implements AbstractListServic
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "web", "description", "moment");
+		request.unbind(entity, model, "nameCharacter", "skills", "moment");
 	}
 
 	@Override

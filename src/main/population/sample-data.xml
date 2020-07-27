@@ -37,8 +37,8 @@
 	
 	<!-- FernandezBulletin -->
 	<bean id="FernandezBulletin01" class="acme.entities.bulletins.FernandezBulletin">
-		<property name="web" value="http://weplan.appspot.com/"/>
-		<property name="description" value="Página para buscar eventos."/>
+		<property name="nameCharacter" value="Solaire"/>
+		<property name="skills" value="The power of sunlight"/>
 		<property name="moment" value="2020/03/01 21:00"/>
 	</bean>
 	
