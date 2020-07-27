@@ -19,30 +19,43 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
+			
+			<acme:menu-suboption code="master.menu.anonymous.list-marin-bulletin" action="/anonymous/marin-bulletin/list" />
+			<acme:menu-suboption code="master.menu.anonymous.create-marin-bulletin" action="/anonymous/marin-bulletin/create" />
+			
+			<acme:menu-separator />
+			
+			<acme:menu-suboption code="master.menu.anonymous.list-fernandez-bulletin" action="/anonymous/fernandez-bulletin/list" />
+			<acme:menu-suboption code="master.menu.anonymous.create-fernandez-bulletin" action="/anonymous/fernandez-bulletin/create" />
+			
+			<acme:menu-separator />
+			
+			<acme:menu-suboption code="master.menu.anonymous.list-jimenez-bulletin" action="/anonymous/jimenez-bulletin/list" />
+			<acme:menu-suboption code="master.menu.anonymous.create-jimenez-bulletin" action="/anonymous/jimenez-bulletin/create" />
+			
+			<acme:menu-separator />
+			
+			<acme:menu-suboption code="master.menu.anonymous.list-donaire-bulletin" action="/anonymous/donaire-bulletin/list" />
+			<acme:menu-suboption code="master.menu.anonymous.create-donaire-bulletin" action="/anonymous/donaire-bulletin/create" />
+			
+			<acme:menu-separator />
+			
+			<acme:menu-suboption code="master.menu.anonymous.list-gonzalez-bulletin" action="/anonymous/gonzalez-bulletin/list" />
+			<acme:menu-suboption code="master.menu.anonymous.create-gonzalez-bulletin" action="/anonymous/gonzalez-bulletin/create" />
+		</acme:menu-option>
+
+		<acme:menu-option code="master.menu.anonymous.links" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-marin" action="http://www.game.es/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-fernandez" action="http://weplan.appspot.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-jimenez" action="http://spotymp3.appspot.com/"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-donaire" action="https://books.google.es/books/about/La_Sombra_del_Viento.html?id=fYa_hJ4bWnsC&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false"/>
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link-gonzalez" action="https://www.youtube.com/watch?v=D0p3TBAn7x0"/>
-			
-			<acme:menu-separator />
-			
-			<acme:menu-suboption code="master.menu.anonymous.list-marin-bulletin" action="/anonymous/marin-bulletin/list" />
-			<acme:menu-suboption code="master.menu.anonymous.create-marin-bulletin" action="/anonymous/marin-bulletin/create" />
-			<acme:menu-suboption code="master.menu.anonymous.list-fernandez-bulletin" action="/anonymous/fernandez-bulletin/list" />
-			<acme:menu-suboption code="master.menu.anonymous.create-fernandez-bulletin" action="/anonymous/fernandez-bulletin/create" />
-			<acme:menu-suboption code="master.menu.anonymous.list-jimenez-bulletin" action="/anonymous/jimenez-bulletin/list" />
-			<acme:menu-suboption code="master.menu.anonymous.create-jimenez-bulletin" action="/anonymous/jimenez-bulletin/create" />
-			<acme:menu-suboption code="master.menu.anonymous.list-donaire-bulletin" action="/anonymous/donaire-bulletin/list" />
-			<acme:menu-suboption code="master.menu.anonymous.create-donaire-bulletin" action="/anonymous/donaire-bulletin/create" />
-			<acme:menu-suboption code="master.menu.anonymous.list-gonzalez-bulletin" action="/anonymous/gonzalez-bulletin/list" />
-			<acme:menu-suboption code="master.menu.anonymous.create-gonzalez-bulletin" action="/anonymous/gonzalez-bulletin/create" />
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.anonymous.notice" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.list-notice" action="/anonymous/notice/list"/>
-
 		</acme:menu-option>
+		
 		<acme:menu-option code="master.menu.anonymous.technology" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.list-technology" action="/anonymous/technology/list"/>
 		</acme:menu-option>
