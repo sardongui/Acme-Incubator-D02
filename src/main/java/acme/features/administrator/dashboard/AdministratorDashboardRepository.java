@@ -1,9 +1,13 @@
 
 package acme.features.administrator.dashboard;
 
+import java.util.Collection;
+
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import acme.entities.inquires.Inquire;
+import acme.entities.overtures.Overture;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
@@ -15,7 +19,7 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select count(t) from Technology t")
 	Integer numberTechnologies();
 
-	@Query("select count(tr) from ToolRecord tr")
+	@Query("select count(r) from ToolRecord r")
 	Integer numberTools();
 
 	@Query("select min (minMoney.amount) from Inquirie where endDate>CURRENT_TIMESTAMP")
@@ -39,6 +43,6 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select avg ((max_money_amount + min_money_amount)/2) from Overture where deadline>CURRENT_TIMESTAMP")
 	Double avgMoneyActiveOvertures();
 
-	@Query("select stddev((max_money_amount + min_money_amount)) from Overture where deadline>CURRENT_TIMESTAMP")
-	Double stddevMoneyActiveOvertures();
+	@Query("select o from Overture o where deadline>CURRENT_TIMESTAMP")
+	Collection<Overture> stddevMoneyActiveOvertures();
 }

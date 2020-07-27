@@ -1,3 +1,4 @@
+
 # i18n_es.messages
 #
 # Copyright (c) 2019 Rafael Corchuelo.
@@ -28,7 +29,9 @@ master.menu.sign-out = Salir
 
 # master.menu.anonymous #######################################################
 
-master.menu.anonymous = Boletin
+
+master.menu.anonymous = Boletines
+
 master.menu.anonymous.favourite-link = Enlace favorito anonimo
 master.menu.anonymous.favourite-link-marin = Enlace favorito de Marín
 master.menu.anonymous.favourite-link-fernandez = Enlace favorito de Fernández
@@ -47,8 +50,7 @@ master.menu.anonymous.create-fernandez-bulletin = Publicar en boletín de Ferná
 master.menu.anonymous.list-gonzalez-bulletin = Boletín de González
 master.menu.anonymous.create-gonzalez-bulletin = Publicar en boletín de González
 
-master.menu.anonymous.tool-record = Registro de Herramientas
-master.menu.anonymous.list-tool-record = List registros de herramientas
+master.menu.anonymous.links = Enlaces
 
 master.menu.anonymous.notice = Anuncios
 master.menu.anonymous.list-notice = Lista de Anuncios
@@ -61,14 +63,15 @@ master.menu.anonymous.list-tool-record = List registros de herramientas
 
 # master.menu.authenticated ###################################################
 
+master.menu.authenticated = Autenticado
+
 
 master.menu.authenticated.inquirie = Consultas
 master.menu.authenticated.list-inquirie = List de consultas
+
 master.menu.authenticated.challenge = Desafio
 master.menu.authenticated.list-challenge = Lista de desafios
 
-
-master.menu.authenticated = Autenticado
 master.menu.authenticated.overture = Oberturas
 master.menu.authenticated.list-overture = List de oberturas
 
@@ -91,6 +94,7 @@ master.menu.administrator.customisation = Customización
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.list-notice = Lista noticias
 master.menu.administrator.chart = Graficos
+master.menu.administrator.dashboard = Estadísticas
 
 
 # master.menu.provider ########################################################
@@ -147,4 +151,4 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
-	
+
