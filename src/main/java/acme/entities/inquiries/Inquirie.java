@@ -1,5 +1,5 @@
 
-package acme.entities.inquires;
+package acme.entities.inquiries;
 
 import java.util.Date;
 
@@ -20,7 +20,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Inquire extends DomainEntity {
+public class Inquirie extends DomainEntity {
 
 	private static final long	serialVersionUID	= 1L;
 

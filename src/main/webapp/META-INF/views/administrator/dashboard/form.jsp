@@ -8,10 +8,10 @@
     <acme:form-textbox code="administrator.dashboard.form.label.numberTechnologies" path="numberTechnologies" />
     <acme:form-textbox code="administrator.dashboard.form.label.numberTools" path="numberTools" />
     
-    <acme:form-textbox code="administrator.dashboard.form.label.minMoneyActiveInquires" path="minMoneyActiveInquires" />
-    <acme:form-textbox code="administrator.dashboard.form.label.maxMoneyActiveInquires" path="maxMoneyActiveInquires" />
-    <acme:form-textbox code="administrator.dashboard.form.label.averageMoneyActiveInquires" path="averageMoneyActiveInquires" />
-    <acme:form-textbox code="administrator.dashboard.form.label.stddevMoneyActiveInquires" path="stddevMoneyActiveInquires" />
+    <acme:form-textbox code="administrator.dashboard.form.label.minMoneyActiveInquiries" path="minMoneyActiveInquiries" />
+    <acme:form-textbox code="administrator.dashboard.form.label.maxMoneyActiveInquiries" path="maxMoneyActiveInquiries" />
+    <acme:form-textbox code="administrator.dashboard.form.label.averageMoneyActiveInquiries" path="averageMoneyActiveInquiries" />
+    <acme:form-textbox code="administrator.dashboard.form.label.stddevMoneyActiveInquiries" path="stddevMoneyActiveInquiries" />
     
     
     

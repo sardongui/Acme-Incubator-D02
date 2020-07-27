@@ -114,8 +114,8 @@
 	
 	<!-- Inquires -->
 	
-	<bean id="Inquire01" class="acme.entities.inquires.Inquire">
-		<property name="title" value="my first inquire"/>
+	<bean id="Inquirie01" class="acme.entities.inquiries.Inquirie">
+		<property name="title" value="my first inquirie"/>
 		<property name="creationDate" value="2020/07/20 17:00"></property>
 		<property name="endDate" value="2020/12/10 17:00"/>
 		<property name="description" value="this is the first inquire."></property>
@@ -124,8 +124,8 @@
 		<property name="email" value="inquire@gmail.com"></property>
 	</bean>
 	
-	<bean id="Inquire02" class="acme.entities.inquires.Inquire">
-		<property name="title" value="my second inquire"/>
+	<bean id="Inquirie02" class="acme.entities.inquiries.Inquirie">
+		<property name="title" value="my second inquirie"/>
 		<property name="creationDate" value="2020/06/20 17:00"></property>
 		<property name="endDate" value="2020/12/11 17:00"/>
 		<property name="description" value="this is the second inquire."></property>

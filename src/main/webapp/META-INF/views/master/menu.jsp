@@ -1,3 +1,4 @@
+
 <%--
 - menu.jsp
 -
@@ -83,8 +84,8 @@
 		<acme:menu-option code="master.menu.authenticated.overture" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.list-overture" action="/authenticated/overture/list"/>
 		</acme:menu-option>
-		<acme:menu-option code="master.menu.authenticated.inquire" access="isAuthenticated()">
-			<acme:menu-suboption code="master.menu.authenticated.list-inquire" action="/authenticated/inquire/list"/>
+		<acme:menu-option code="master.menu.authenticated.inquirie" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.list-inquirie" action="/authenticated/inquirie/list"/>
 		</acme:menu-option>
 
 
