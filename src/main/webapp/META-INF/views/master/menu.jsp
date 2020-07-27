@@ -43,6 +43,16 @@
 			<acme:menu-suboption code="master.menu.anonymous.list-notice" action="/anonymous/notice/list"/>
 
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.anonymous.technology" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.anonymous.list-technology" action="/anonymous/technology/list"/>
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.anonymous.tool-record" access="isAnonymous()">
+			<acme:menu-suboption code="master.menu.anonymous.list-tool-record" action="/anonymous/tool-record/list"/>
+		</acme:menu-option>
+
+		</acme:menu-option>
 		<acme:menu-option code="master.menu.anonymous.technology" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.list-technology" action="/anonymous/technology/list"/>
 		</acme:menu-option>
@@ -72,6 +82,14 @@
 		</acme:menu-option>
 		<acme:menu-option code="master.menu.authenticated.inquire" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.list-inquire" action="/authenticated/inquire/list"/>
+		</acme:menu-option>
+		
+				<acme:menu-option code="master.menu.authenticated.technology" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.list-technology" action="/authenticated/technology/list"/>
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.authenticated.tool-record" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.list-tool-record" action="/authenticated/tool-record/list"/>
 		</acme:menu-option>
 
 
